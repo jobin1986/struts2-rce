@@ -21,8 +21,8 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
-    - task: NexusIqPipelineTask@1
-      inputs:
-        nexusIqService: 'Nexus IQ'
-        applicationId: 'Struts2-rce'
-        stage: 'Build'
+- task: NexusIqPipelineTask@1
+  inputs:
+  nexusIqService: 'Nexus IQ'
+  applicationId: 'Struts2-rce'
+  stage: 'Build'
